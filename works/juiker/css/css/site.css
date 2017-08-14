@@ -805,6 +805,7 @@ fieldset[disabled] .btn-danger.focus {
 }
 .breadcrumb {
   background: transparent;
+  color: #ffffff;
   font-size: 14px;
   margin: 0;
 }

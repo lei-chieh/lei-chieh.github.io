@@ -716,6 +716,7 @@ fieldset[disabled] .btn-danger.active {
 }
 .breadcrumb {
   background: transparent;
+  color: #ffffff;
   font-size: 14px;
   margin: 0;
 }
