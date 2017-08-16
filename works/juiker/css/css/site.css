@@ -2220,9 +2220,19 @@ fieldset[disabled] .jk-btn-black.focus {
   bottom: 0;
   width: 100%;
   padding: 15px;
+  background: #ffffff;
+  border-top: 1px solid #eee;
+  transition: padding 0.3s ease-in-out;
 }
-.sidebar-open .jk-fixed-box {
-  padding-left: 230px;
+@media (min-width: 1000px) {
+  .jk-fixed-box {
+    padding-left: 245px;
+  }
+}
+@media (min-width: 1000px) {
+  .sidebar-collapse .jk-fixed-box {
+    padding-left: 15px;
+  }
 }
 .jk-folder .box {
   display: inline-block;
@@ -2847,12 +2857,26 @@ a.jk-list-item:focus,
   }
 }
 @media (max-width: 999px) {
-  #content {
+  .jk-shrink #content .content {
+    min-width: 800px;
+    transform-origin: 0% 0%;
+  }
+}
+@media (min-width: 1000px) {
+  .jk-shrink #content .content {
+    transform: none !important;
+  }
+}
+@media (max-width: 999px) {
+  .jk-scrollable #content {
     width: 100%;
     overflow-x: auto;
   }
-  .content {
+  .jk-scrollable #content .content {
     min-width: 800px;
     padding: 30px 15px;
+  }
+  .sidebar-open.jk-scrollable #content {
+    overflow-x: hidden;
   }
 }
