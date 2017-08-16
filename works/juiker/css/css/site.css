@@ -2858,7 +2858,7 @@ a.jk-list-item:focus,
 }
 @media (max-width: 999px) {
   .jk-shrink #content .content {
-    min-width: 800px;
+    min-width: 1000px;
     transform-origin: 0% 0%;
   }
 }
