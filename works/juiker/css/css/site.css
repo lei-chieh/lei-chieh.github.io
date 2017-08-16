@@ -2829,8 +2829,6 @@ a.jk-list-item:focus,
 }
 #content {
   position: relative;
-  width: 100%;
-  overflow-x: auto;
 }
 #content::before {
   content: "";
@@ -2848,7 +2846,12 @@ a.jk-list-item:focus,
     display: block;
   }
 }
-.content {
-  min-width: 800px;
-  padding: 30px 15px;
+@media (max-width: 999px) {
+  width: 100%;
+  overflow-x: auto;
+  
+  .content {
+    min-width: 800px;
+    padding: 30px 15px;
+  }
 }
