@@ -2214,6 +2214,16 @@ fieldset[disabled] .jk-btn-black.focus {
 .jk-box-lg > .box-footer {
   padding: 15px;
 }
+.jk-fixed-box {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 15px;
+}
+.sidebar-open .jk-fixed-box {
+  padding-left: 230px;
+}
 .jk-folder .box {
   display: inline-block;
   width: 214px;
@@ -2819,6 +2829,8 @@ a.jk-list-item:focus,
 }
 #content {
   position: relative;
+  width: 100%;
+  overflow-x: auto;
 }
 #content::before {
   content: "";
@@ -2836,17 +2848,7 @@ a.jk-list-item:focus,
     display: block;
   }
 }
-@media (max-width: 999px) {
-  .jk-shrink #content .content {
-    min-width: 1000px;
-    transform-origin: 0% 0%;
-  }
-}
-@media (min-width: 1000px) {
-  .jk-shrink #content .content {
-    transform: none !important;
-  }
-}
 .content {
+  min-width: 800px;
   padding: 30px 15px;
 }
