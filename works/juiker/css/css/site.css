@@ -2847,9 +2847,10 @@ a.jk-list-item:focus,
   }
 }
 @media (max-width: 999px) {
-  width: 100%;
-  overflow-x: auto;
-  
+  #content {
+    width: 100%;
+    overflow-x: auto;
+  }
   .content {
     min-width: 800px;
     padding: 30px 15px;
