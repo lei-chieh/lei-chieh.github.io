@@ -1095,14 +1095,8 @@ caption {
 .select2-container--default .select2-selection--multiple:focus {
   border-color: #0cb2ad;
 }
-<<<<<<< HEAD
 .select2-container--default.select2-container--focus .select2-selection--multiple {
   border-color: #d2d6de;
-=======
-.main-header .breadcrumb {
-  float: left;
-  padding: 15px 5px;
->>>>>>> 63b5174baf26324945370cb4f957376a3289e882
 }
 .select2-container--default .select2-selection--multiple .select2-selection__choice {
   background-color: #0cb2ad;
@@ -1110,20 +1104,11 @@ caption {
   padding: 1px 10px;
   color: #fff;
 }
-<<<<<<< HEAD
 .select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
   margin-right: 5px;
   color: rgba(255, 255, 255, 0.7);
 }
 .select2-container--default .select2-selection--multiple .select2-selection__choice__remove:hover {
-=======
-.main-header .breadcrumb > li > a:hover,
-.main-header .breadcrumb > li > a:active,
-.main-header .breadcrumb > li > a:focus {
-  color: #f8d503;
-}
-.main-header .breadcrumb > .active {
->>>>>>> 63b5174baf26324945370cb4f957376a3289e882
   color: #fff;
 }
 .select2-container .select2-selection--single .select2-selection__rendered {
@@ -1306,7 +1291,6 @@ caption {
 }
 .jk-text-lg {
   font-size: 1.2em;
-<<<<<<< HEAD
 }
 .jk-text-overflow {
   overflow: hidden;
@@ -1315,8 +1299,6 @@ caption {
 }
 .jk-text-nowrap {
   white-space: nowrap;
-=======
->>>>>>> 63b5174baf26324945370cb4f957376a3289e882
 }
 .jk-hover-border {
   border: 1px solid transparent;
@@ -1713,12 +1695,9 @@ fieldset[disabled] .btn-danger.focus {
 .btn-app.btn-lg.btn-primary {
   box-shadow: 0 0 0 6px rgba(12, 176, 171, 0.2);
 }
-<<<<<<< HEAD
 .label {
   font-weight: normal;
 }
-=======
->>>>>>> 63b5174baf26324945370cb4f957376a3289e882
 .label-primary {
   background: #0cb2ad !important;
 }
@@ -1727,7 +1706,6 @@ fieldset[disabled] .btn-danger.focus {
 }
 .breadcrumb {
   background: transparent;
-<<<<<<< HEAD
   font-size: 14px;
   margin: 0;
 }
@@ -1738,19 +1716,6 @@ fieldset[disabled] .btn-danger.focus {
 .breadcrumb > li + li:before {
   padding: 0 10px;
   color: #ffffff;
-=======
-  color: #ffffff;
-  font-size: 14px;
-  margin: 0;
-}
-.breadcrumb > li i {
-  margin-left: 5px;
-  margin-right: 5px;
-}
-.breadcrumb > li + li:before {
-  padding: 0 10px;
-  color: #ffffff;
->>>>>>> 63b5174baf26324945370cb4f957376a3289e882
   font: normal normal normal 14px/1 FontAwesome;
   content: '\f105';
 }
@@ -1926,7 +1891,6 @@ form label {
   top: 2px;
   background: #7bd3d0;
 }
-<<<<<<< HEAD
 .ui-resizable-handle {
   display: block;
   width: 20px;
@@ -2006,8 +1970,6 @@ form label {
 .jk-label-lg {
   font-size: 100%;
 }
-=======
->>>>>>> 63b5174baf26324945370cb4f957376a3289e882
 .jk-label-primary-light {
   background: #7bd3d0;
 }
@@ -2238,7 +2200,6 @@ fieldset[disabled] .jk-btn-black.focus {
 .jk-link-block-primary:focus {
   border-color: #0cb2ad;
 }
-<<<<<<< HEAD
 .jk-caret-top.caret {
   transform: rotate(180deg);
 }
@@ -2248,8 +2209,6 @@ fieldset[disabled] .jk-btn-black.focus {
 .jk-caret-right.caret {
   transform: rotate(-90deg);
 }
-=======
->>>>>>> 63b5174baf26324945370cb4f957376a3289e882
 .jk-box-lg > .box-header,
 .jk-box-lg > .box-body,
 .jk-box-lg > .box-footer {
@@ -2383,7 +2342,6 @@ fieldset[disabled] .jk-btn-black.focus {
   background: #fefbef;
   border-left-color: #f8d503;
 }
-<<<<<<< HEAD
 .jk-num-box.active .box-header {
   background: #0cb2ad;
 }
@@ -2398,8 +2356,6 @@ fieldset[disabled] .jk-btn-black.focus {
   border-radius: 50%;
   display: inline-block;
 }
-=======
->>>>>>> 63b5174baf26324945370cb4f957376a3289e882
 .jk-user-panel {
   margin-bottom: 10px;
 }
@@ -2418,35 +2374,22 @@ fieldset[disabled] .jk-btn-black.focus {
   padding: 0;
   border: 0;
 }
-<<<<<<< HEAD
 .jk-user-panel .jk-user-image {
   width: 24px;
   height: 24px;
-=======
-.jk-user-panel .user-image {
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
->>>>>>> 63b5174baf26324945370cb4f957376a3289e882
 }
 .jk-user-panel .user-data small {
   margin-left: 10px;
 }
 .jk-chat-bubble {
   position: relative;
-<<<<<<< HEAD
   margin-top: 15px;
   padding: 10px;
   background: #f2f2f2;
-=======
-  padding: 10px;
-  background: #e9f3f2;
->>>>>>> 63b5174baf26324945370cb4f957376a3289e882
   border-radius: 3px;
 }
 .jk-chat-bubble .caret {
   position: absolute;
-<<<<<<< HEAD
   left: 34px;
   top: -8px;
   transform: rotate(180deg);
@@ -2458,41 +2401,6 @@ fieldset[disabled] .jk-btn-black.focus {
 }
 .jk-bg-primary-light .jk-chat-bubble .caret {
   border-top-color: #e9f3f2;
-=======
-  border-width: 8px;
-  border-top-color: #e9f3f2;
-}
-.jk-chat-bubble.caret-top {
-  margin-top: 15px;
-}
-.jk-chat-bubble.caret-top .caret {
-  left: 34px;
-  top: -8px;
-  transform: rotate(180deg);
-}
-.jk-chat-bubble.caret-bottom {
-  margin-bottom: 15px;
-}
-.jk-chat-bubble.caret-bottom .caret {
-  left: 34px;
-  bottom: -8px;
-}
-.jk-chat-bubble.caret-left {
-  margin-left: 15px;
-}
-.jk-chat-bubble.caret-left .caret {
-  left: -14px;
-  top: 34px;
-  transform: rotate(90deg);
-}
-.jk-chat-bubble.caret-right {
-  margin-right: 15px;
-}
-.jk-chat-bubble.caret-right .caret {
-  right: -12px;
-  top: 34px;
-  transform: rotate(-90deg);
->>>>>>> 63b5174baf26324945370cb4f957376a3289e882
 }
 .modal .jk-panel > .panel-heading {
   padding: 7px 10px;
@@ -2909,7 +2817,6 @@ a.jk-list-item:focus,
 .main-footer ul li a {
   color: #666666;
 }
-<<<<<<< HEAD
 #content {
   position: relative;
 }
@@ -2940,8 +2847,6 @@ a.jk-list-item:focus,
     transform: none !important;
   }
 }
-=======
->>>>>>> 63b5174baf26324945370cb4f957376a3289e882
 .content {
   padding: 30px 15px;
 }
