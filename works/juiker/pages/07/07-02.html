@@ -10,7 +10,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <!-- head -->
   <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>08-01 - Juiker 揪科</title>
+<title>07-02 - Juiker 揪科</title>
 <meta content="width=device-width, initial-scale=1, user-scalable=yes" name="viewport">
 <link rel="icon" type="image/vnd.microsoft.icon" href="../../brand/juiker/img/favicon.ico" />
 
@@ -214,7 +214,6 @@ desired effect
 
 
 
-
 <div class="row jk-steps-bar">
     <div class="col-xs-4 step done">
         <span class="num"><i class="fa fa-check"></i></span>
@@ -236,12 +235,9 @@ desired effect
 <div class="box jk-box-lg no-border">
     <div class="box-body">
         <div class="jk-mb clearfix">
-            <div class="pull-right">
-                <button class="btn btn-primary jk-icon-btn"><i class="fa fa-plus-circle"></i></button>
-                <button class="btn btn-primary jk-icon-btn" onclick="javascript:location.href='../06/06-03.html'"><i class="fa fa-arrows-v"></i></button>
-                <button class="btn btn-primary jk-icon-btn" onclick="javascript:location.href='../07/07-02.html'"><i class="fa fa-trash"></i></button>
-                <button class="btn btn-primary jk-icon-btn" data-toggle="modal" data-target="#myModal"><i class="fa fa-eye"></i></button>
-                <button class="btn btn-primary jk-icon-btn jk-ml-lg" data-toggle="control-sidebar"><i class="fa fa-question-circle"></i></button>
+            <div class="pull-right jk-w50 jk-p-icon">
+                <i class="fa fa-lightbulb-o text-warning"></i>
+                您可單次刪除多筆欄位
             </div>
             <h4>
                 <i class="text-primary fa fa-folder"></i>
@@ -250,10 +246,11 @@ desired effect
         </div>
         <div class="row">
             <div class="col-xs-6">
-                <div class="jk-num-box">
+                <!-- 選取中：class + active -->
+                <div class="jk-num-box active">
                     <span class="num">1</span>
-                    <a href="#" class="edit"><i class="fa fa-pencil"></i></a>
-                    <div class="box no-border">
+                    <!-- 可以按的：class + clickable -->
+                    <div class="box no-border clickable">
                         <div class="box-header">Name</div>
                         <div class="box-body">
                             <div class="row">
@@ -271,8 +268,8 @@ desired effect
                 
                 <div class="jk-num-box">
                     <span class="num">2</span>
-                    <a href="#" class="edit"><i class="fa fa-pencil"></i></a>
-                    <div class="box no-border">
+                    <!-- 可以按的：class + clickable -->
+                    <div class="box no-border clickable">
                         <div class="box-header">User Customized Field</div>
                         <div class="box-body">
                             <div class="row">
@@ -297,8 +294,8 @@ desired effect
                 
                 <div class="jk-num-box">
                     <span class="num">2</span>
-                    <a href="#" class="edit"><i class="fa fa-pencil"></i></a>
-                    <div class="box no-border">
+                    <!-- 可以按的：class + clickable -->
+                    <div class="box no-border clickable">
                         <div class="box-header">User Customized Field</div>
                         <div class="box-body">
                             <div class="row">
@@ -323,8 +320,8 @@ desired effect
                 
                 <div class="jk-num-box">
                     <span class="num">2</span>
-                    <a href="#" class="edit"><i class="fa fa-pencil"></i></a>
-                    <div class="box no-border">
+                    <!-- 可以按的：class + clickable -->
+                    <div class="box no-border clickable">
                         <div class="box-header">User Customized Field</div>
                         <div class="box-body">
                             <div class="row">
@@ -349,8 +346,8 @@ desired effect
                 
                 <div class="jk-num-box">
                     <span class="num">2</span>
-                    <a href="#" class="edit"><i class="fa fa-pencil"></i></a>
-                    <div class="box no-border">
+                    <!-- 可以按的：class + clickable -->
+                    <div class="box no-border clickable">
                         <div class="box-header">User Customized Field</div>
                         <div class="box-body">
                             <div class="row">
@@ -376,10 +373,11 @@ desired effect
             </div>
             <div class="col-xs-6">
                 
-                <div class="jk-num-box">
+                <!-- 選取中：class + active -->
+                <div class="jk-num-box active">
                     <span class="num">6</span>
-                    <a href="#" class="edit"><i class="fa fa-pencil"></i></a>
-                    <div class="box no-border">
+                    <!-- 可以按的：class + clickable -->
+                    <div class="box no-border clickable">
                         <div class="box-header">User Customized Field</div>
                         <div class="box-body">
                             <div class="row">
@@ -402,88 +400,11 @@ desired effect
                     </div>
                 </div>
                 
-                <div class="jk-num-box">
+                <!-- 選取中：class + active -->
+                <div class="jk-num-box active">
                     <span class="num">6</span>
-                    <a href="#" class="edit"><i class="fa fa-pencil"></i></a>
-                    <div class="box no-border">
-                        <div class="box-header">User Customized Field</div>
-                        <div class="box-body">
-                            <div class="row">
-                                <div class="col-xs-6">
-                                    <div class="radio no-margin">
-                                        <label>
-                                            <input type="radio" name="optionsRadios6" value="option1"> 必填
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="col-xs-6">
-                                    <div class="radio no-margin">
-                                        <label>
-                                            <input type="radio" name="optionsRadios6" value="option2" checked> 非必填
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="jk-num-box">
-                    <span class="num">6</span>
-                    <a href="#" class="edit"><i class="fa fa-pencil"></i></a>
-                    <div class="box no-border">
-                        <div class="box-header">User Customized Field</div>
-                        <div class="box-body">
-                            <div class="row">
-                                <div class="col-xs-6">
-                                    <div class="radio no-margin">
-                                        <label>
-                                            <input type="radio" name="optionsRadios6" value="option1"> 必填
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="col-xs-6">
-                                    <div class="radio no-margin">
-                                        <label>
-                                            <input type="radio" name="optionsRadios6" value="option2" checked> 非必填
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="jk-num-box">
-                    <span class="num">6</span>
-                    <a href="#" class="edit"><i class="fa fa-pencil"></i></a>
-                    <div class="box no-border">
-                        <div class="box-header">User Customized Field</div>
-                        <div class="box-body">
-                            <div class="row">
-                                <div class="col-xs-6">
-                                    <div class="radio no-margin">
-                                        <label>
-                                            <input type="radio" name="optionsRadios6" value="option1"> 必填
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="col-xs-6">
-                                    <div class="radio no-margin">
-                                        <label>
-                                            <input type="radio" name="optionsRadios6" value="option2" checked> 非必填
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="jk-num-box">
-                    <span class="num">6</span>
-                    <a href="#" class="edit"><i class="fa fa-pencil"></i></a>
-                    <div class="box no-border">
+                    <!-- 可以按的：class + clickable -->
+                    <div class="box no-border clickable">
                         <div class="box-header">User Customized Field</div>
                         <div class="box-body">
                             <div class="row">
@@ -510,9 +431,17 @@ desired effect
         </div>
     </div>
     <div class="box-footer text-center">
-        <button type="button" class="btn jk-btn-muted jk-btn-border" data-toggle="modal" data-target="#myModal2">取消</button>
-        <button type="button" class="btn btn-primary jk-btn-border">確定</button>
+        <button type="button" class="btn jk-btn-muted jk-btn-border">取消</button>
     </div>
+</div>
+
+<!-- class 移除 active 可隱藏 -->
+<div class="jk-fixed-box active clearfix">
+    <div class="pull-right">
+        <button class="btn btn-link text-danger jk-text-lg"><i class="fa fa-trash"></i> 刪除</button>
+    </div>
+    <button class="btn btn-link jk-text-muted jk-text-lg"><i class="ion-android-arrow-back"></i></button>
+    <span class="text-muted">已選取 <span class="badge bg-primary jk-mx-sm">3</span>欄位</span>
 </div>
 
     </section>
@@ -551,85 +480,8 @@ desired effect
 <!-- Control Sidebar -->
 <aside class="control-sidebar">
   
-    <h3 class="control-sidebar-heading jk-bg-white jk-text-color">
-    <a href="" data-toggle="control-sidebar" class="btn btn-primary jk-icon-btn jk-icon-circle no-padding jk-mr-sm">
-        <i class="ion-android-arrow-back"></i>
-    </a>
-    員工資料欄位排序說明：
-</h3>
-
-<p>您設定的欄位順序將成為員工Excel表單的欄位順序，並在下一步驟中下載成為您的範本，如下圖範例。</p>
-<p class="text-center"><img src="http://placehold.it/292x124" alt=""></p>
-
-  
 </aside>
 <!-- /.control-sidebar -->
-
-  <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-            <div class="modal-header bg-primary">
-                <button type="button" class="close pull-left jk-text-white" data-dismiss="modal">
-                    <i class="ion-android-arrow-back"></i>
-                </button>
-                <p class="modal-title">
-                    <i class="fa fa-eye"></i>
-                    預覽表單
-                </p>
-            </div>
-            <div class="modal-body">
-                <p>請參考欄位順序的預覽結果與各欄位的格式說明，若欄位需要調整，請返回繼續設定。</p>
-                <p><small class="text-red">*必填欄位以紅色標注</small></p>
-                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner" role="listbox">
-                        <div class="item active">
-                            <img src="http://placehold.it/824x374" />
-                        </div>
-                        <div class="item">
-                            <img src="http://placehold.it/824x374" />
-                        </div>
-                    </div>
-                    <!-- Controls -->
-                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                        <i class="bg-primary ion-android-arrow-back"></i>
-                        上一頁
-                    </a>
-                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                        <i class="bg-primary ion-android-arrow-forward"></i>
-                        下一頁
-                    </a>
-                </div>
-            </div>
-            <div class="modal-footer text-center">
-                <button type="button" class="btn jk-btn-muted jk-btn-border" data-dismiss="modal">取消</button>
-                <button type="button" class="btn btn-primary jk-btn-border">確認</button>
-            </div>
-        </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
-<div class="modal fade" id="myModal2" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header bg-primary">
-                <button type="button" class="close pull-left jk-text-white" data-dismiss="modal">
-                    <i class="ion-android-arrow-back"></i>
-                </button>
-                <p class="modal-title">
-                    結束快速設定導覽
-                </p>
-            </div>
-            <div class="modal-body">
-                <p>您尚未完成員工資料欄位的建立，您的欄位資料將不會被儲存。</p>
-                <p class="jk-mt-lg">確定離開？</p>
-            </div>
-            <div class="modal-footer text-center">
-                <button type="button" class="btn jk-btn-muted jk-btn-border" data-dismiss="modal">取消</button>
-                <button type="button" class="btn btn-primary jk-btn-border">離開</button>
-            </div>
-        </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
 
 
 <!-- foot -->
@@ -666,12 +518,6 @@ desired effect
     $('body').removeClass('control-sidebar-expend');
   });
 </script>
-
-    <script>
-    $('.carousel').carousel({
-        interval: false
-    }); 
-  </script>
 
 
 </body>

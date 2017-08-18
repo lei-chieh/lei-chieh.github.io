@@ -29,7 +29,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <!-- <link rel="stylesheet" href="../../vendor/AdminLTE/css/skins/skin-blue.min.css"> -->
 
 <!-- Custom style -->
-<link rel="stylesheet" href="../../css/css/site.css">
+<link rel="stylesheet" href="../../css/site.css">
 
 <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -64,7 +64,7 @@ desired effect
 |               | sidebar-mini                            |
 |---------------------------------------------------------|
 -->
-<body class="hold-transition jk-skin jk-shrink">
+<body class="hold-transition shrink">
 <div class="wrapper">
 
   <!-- Main Header -->
@@ -74,7 +74,7 @@ desired effect
     <span class="sr-only">Toggle navigation</span>
   </a>
   <!-- Logo -->
-  <a href="index2.html" class="logo">
+  <a href="index2.html" class="logo visible-lg-block">
     <!-- mini logo for sidebar mini 50x50 pixels -->
     <!-- <span class="logo-mini"><b>A</b>LT</span> -->
     <!-- logo for regular state and mobile devices -->
@@ -85,13 +85,38 @@ desired effect
   <nav class="navbar navbar-static-top" role="navigation">
     <ol class="breadcrumb">
       
-              <li class="active"><i class="fa fa-user-circle text-yellow"></i> 員工資料</li>
-
+          <li class="active"><i class="fa fa-user-circle text-yellow"></i> 員工資料</li>
       
     </ol>
     <!-- Navbar Right Menu -->
     <div class="navbar-custom-menu">
-      <ul class="nav navbar-nav">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+        <i class="fa fa-ellipsis-h"></i>
+      </button>
+      <ul class="navbar-collapse collapse list-unstyled" id="navbar-collapse">
+        <li>
+          <a class="jk-list-item collapsed" role="button" data-toggle="collapse" href="#collapseExample">
+            <i class="fa fa-globe"></i>
+            選擇語言
+            <i class="caret"></i>
+          </a>
+          <ul class="collapse list-unstyled" id="collapseExample">
+            <li><a class="jk-list-item" href="#">繁體中文</a></li>
+            <li><a class="jk-list-item" href="#">English</a></li>
+          </ul>
+        </li>
+        <li><a class="jk-list-item" href="#">企業基本資料</a></li>
+        <li><a class="jk-list-item" href="#">切換身份</a></li>
+        <li><a class="jk-list-item" href="#">更改密碼</a></li>
+        <li><a class="jk-list-item" href="#">系統管理設定</a></li>
+        <li>
+          <a href="#" class="jk-list-item">
+            <i class="fa fa-power-off"></i>
+            登出
+          </a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav hidden-xs">
         <!-- Messages: style can be found in dropdown.less-->
         <li class="dropdown">
           <!-- Menu toggle button -->
@@ -139,9 +164,9 @@ desired effect
           </ul>
         </li>
         <!-- Control Sidebar Toggle Button -->
-        <li>
+        <!-- <li>
           <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
-        </li>
+        </li> -->
       </ul>
     </div>
   </nav>
@@ -158,16 +183,21 @@ desired effect
       <li><a href=""><i class="fa fa-building-o"></i> <span>企業基本資料</span></a></li>
       <li class="header">員工資料管理</li>
       <!-- Optionally, you can add icons to the links -->
-      <li class="active"><a href="#"><i class="fa fa-link"></i> <span>員工資料</span></a></li>
-      <li><a href="#"><i class="fa fa-link"></i> <span>共用設定</span></a></li>
+      <li class="active"><a href="#"><i class="fa fa-folder"></i> <span>員工資料</span></a></li>
+      <li>
+        <a href="#">
+          <i class="fa fa-unlock-alt"></i> <span>共用設定</span>
+          <span class="badge bg-orange">5</span>
+        </a>
+      </li>
       <li class="header">通訊錄</li>
-      <li><a href="#"><i class="fa fa-link"></i> <span>手機通訊錄</span></a></li>
-      <li><a href="#"><i class="fa fa-link"></i> <span>手機通訊錄管理</span></a></li>
+      <li><a href="#"><i class="fa fa-address-book"></i> <span>手機通訊錄</span></a></li>
+      <li><a href="#"><i class="fa fa-wrench"></i> <span>手機通訊錄管理</span></a></li>
       <li class="header">微應用</li>
-      <li><a href="#"><i class="fa fa-link"></i> <span>企業聊天室</span></a></li>
-      <li><a href="#"><i class="fa fa-link"></i> <span>企業公告</span></a></li>
-      <li><a href="#"><i class="fa fa-link"></i> <span>企業專屬社團</span></a></li>
-      <li><a href="#"><i class="fa fa-link"></i> <span>企業報表</span></a></li>
+      <li><a href="#"><i class="fa fa-comments"></i> <span>企業聊天室</span></a></li>
+      <li><a href="#"><i class="fa fa-bullhorn"></i> <span>企業公告</span></a></li>
+      <li><a href="#"><i class="fa fa-users"></i> <span>企業專屬社團</span></a></li>
+      <li><a href="#"><i class="fa fa-bar-chart"></i> <span>企業報表</span></a></li>
     </ul>
     <!-- /.sidebar-menu -->
   </section>
@@ -211,7 +241,7 @@ desired effect
                 <button class="btn btn-primary jk-icon-btn" onclick="javascript:location.href='../06/06-03.html'"><i class="fa fa-arrows-v"></i></button>
                 <button class="btn btn-primary jk-icon-btn" onclick="javascript:location.href='../07/07-02.html'"><i class="fa fa-trash"></i></button>
                 <button class="btn btn-primary jk-icon-btn" data-toggle="modal" data-target="#myModal"><i class="fa fa-eye"></i></button>
-                <button class="btn btn-primary jk-icon-btn jk-ml-lg"><i class="fa fa-question-circle"></i></button>
+                <button class="btn btn-primary jk-icon-btn jk-ml-lg" data-toggle="control-sidebar"><i class="fa fa-question-circle"></i></button>
             </div>
             <h4>
                 <i class="text-primary fa fa-folder"></i>
@@ -513,17 +543,27 @@ desired effect
   <span class="text-gray">版權所有 &copy; 工業技術研究院 2017 GNU Public License</span>
 </footer>
 
-  <!-- Control Sidebar -->
-  <aside class="control-sidebar jk-bg-white">
-
-    
-
-  </aside>
-  <!-- /.control-sidebar -->
-  <div class="control-sidebar-bg jk-bg-white"></div>
+  
 
 </div>
 <!-- ./wrapper -->
+
+<!-- Control Sidebar -->
+<aside class="control-sidebar">
+  
+    <h3 class="control-sidebar-heading">
+    <a href="" data-toggle="control-sidebar" class="btn btn-primary jk-icon-btn jk-icon-circle no-padding jk-mr-sm">
+        <i class="ion-android-arrow-back"></i>
+    </a>
+    員工資料欄位排序說明：
+</h3>
+
+<p>您設定的欄位順序將成為員工Excel表單的欄位順序，並在下一步驟中下載成為您的範本，如下圖範例。</p>
+<p class="text-center"><img src="http://placehold.it/292x124" alt=""></p>
+
+  
+</aside>
+<!-- /.control-sidebar -->
 
   <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
     <div class="modal-dialog modal-lg" role="document">
@@ -599,10 +639,31 @@ desired effect
 <script src="../../js/bootstrap.min.js"></script>
 <!-- AdminLTE App -->
 <script src="../../js/adminlte.min.js"></script>
-<!-- override - sidebar collapse breakpoint -->
 <script>
+  // override - sidebar collapse breakpoint
   $('.sidebar-toggle[data-toggle="push-menu"]').pushMenu({
     collapseScreenSize: 999,
+  });
+
+  // toggle body class when navbar-collapse is toggled
+  $('#navbar-collapse').on('show.bs.collapse', function () {
+    $('body').addClass('navbar-open');
+    // click outside to close
+    $('#content').click(function() {
+      $('#navbar-collapse').collapse('hide');
+    });
+  });
+  $('#navbar-collapse').on('hide.bs.collapse', function () {
+    $('body').removeClass('navbar-open');
+  });
+
+  // toggle body class when control-sidebar is toggled
+  $('[data-toggle="control-sidebar"]').on('expanded.controlsidebar', function () {
+    $('body').addClass('control-sidebar-expend');
+    
+  });
+  $('[data-toggle="control-sidebar"]').on('collapsed.controlsidebar', function () {
+    $('body').removeClass('control-sidebar-expend');
   });
 </script>
 

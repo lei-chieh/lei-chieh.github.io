@@ -1,0 +1,620 @@
+
+
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html lang="zh-TW">
+<head>
+  <!-- head -->
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>31-01 - Juiker 揪科</title>
+<meta content="width=device-width, initial-scale=1, user-scalable=yes" name="viewport">
+<link rel="icon" type="image/vnd.microsoft.icon" href="../../brand/juiker/img/favicon.ico" />
+
+<!-- core Bootstrap -->
+<link rel="stylesheet" href="../../css/bootstrap.min.css">
+
+<!-- vendor css -->
+	    <link rel="stylesheet" href="../../vendor/select2/css/select2.min.css">
+
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="../../fonts/font-awesome/css/font-awesome.min.css">
+<!-- Ionicons -->
+<link rel="stylesheet" href="../../fonts/Ionicons/css/ionicons.min.css">
+
+<!-- Theme style -->
+<link rel="stylesheet" href="../../css/AdminLTE.min.css">
+<!-- <link rel="stylesheet" href="../../vendor/AdminLTE/css/skins/skin-blue.min.css"> -->
+
+<!-- Custom style -->
+<link rel="stylesheet" href="../../css/site.css">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<!-- Google Font -->
+<link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+<link rel="stylesheet"
+    href="http://fonts.googleapis.com/earlyaccess/notosanstc.css">
+</head>
+<!--
+BODY TAG OPTIONS:
+=================
+Apply one or more of the following classes to get the
+desired effect
+|---------------------------------------------------------|
+| SKINS         | skin-blue                               |
+|               | skin-black                              |
+|               | skin-purple                             |
+|               | skin-yellow                             |
+|               | skin-red                                |
+|               | skin-green                              |
+|---------------------------------------------------------|
+|LAYOUT OPTIONS | fixed                                   |
+|               | layout-boxed                            |
+|               | layout-top-nav                          |
+|               | sidebar-collapse                        |
+|               | sidebar-mini                            |
+|---------------------------------------------------------|
+-->
+<body class="hold-transition ">
+<div class="wrapper">
+
+  <!-- Main Header -->
+  <header id="header" class="main-header">
+  <!-- Sidebar toggle button-->
+  <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+    <span class="sr-only">Toggle navigation</span>
+  </a>
+  <!-- Logo -->
+  <a href="index2.html" class="logo visible-lg-block">
+    <!-- mini logo for sidebar mini 50x50 pixels -->
+    <!-- <span class="logo-mini"><b>A</b>LT</span> -->
+    <!-- logo for regular state and mobile devices -->
+    <span class="logo-lg">Juiker</span>
+  </a>
+
+  <!-- Header Navbar -->
+  <nav class="navbar navbar-static-top" role="navigation">
+    <ol class="breadcrumb">
+      
+          <li class="active"><i class="fa fa-user-circle text-yellow"></i> 員工資料</li>
+      
+    </ol>
+    <!-- Navbar Right Menu -->
+    <div class="navbar-custom-menu">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+        <i class="fa fa-ellipsis-h"></i>
+      </button>
+      <ul class="navbar-collapse collapse list-unstyled" id="navbar-collapse">
+        <li>
+          <a class="jk-list-item collapsed" role="button" data-toggle="collapse" href="#collapseExample">
+            <i class="fa fa-globe"></i>
+            選擇語言
+            <i class="caret"></i>
+          </a>
+          <ul class="collapse list-unstyled" id="collapseExample">
+            <li><a class="jk-list-item" href="#">繁體中文</a></li>
+            <li><a class="jk-list-item" href="#">English</a></li>
+          </ul>
+        </li>
+        <li><a class="jk-list-item" href="#">企業基本資料</a></li>
+        <li><a class="jk-list-item" href="#">切換身份</a></li>
+        <li><a class="jk-list-item" href="#">更改密碼</a></li>
+        <li><a class="jk-list-item" href="#">系統管理設定</a></li>
+        <li>
+          <a href="#" class="jk-list-item">
+            <i class="fa fa-power-off"></i>
+            登出
+          </a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav hidden-xs">
+        <!-- Messages: style can be found in dropdown.less-->
+        <li class="dropdown">
+          <!-- Menu toggle button -->
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <i class="fa fa-envelope-o"></i>
+            <span class="label label-warning">4</span>
+          </a>
+          <ul class="dropdown-menu">
+            <!-- <li class="header">You have 4 messages</li> -->
+            <li><a href="#">測試訊息</a></li>
+            <li><a href="#">測試訊息</a></li>
+            <!-- <li class="footer"><a href="#">See All Messages</a></li> -->
+          </ul>
+        </li>
+        <!-- /.messages-menu -->
+
+        <!-- Tasks Menu -->
+        <li class="dropdown">
+          <!-- Menu Toggle Button -->
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <i class="fa fa-globe"></i>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="#">繁體中文</a></li>
+            <li><a href="#">English English English English English English English English English English English English English English English English</a></li>
+          </ul>
+        </li>
+        <!-- User Account Menu -->
+        <li class="dropdown user user-menu">
+          <!-- Menu Toggle Button -->
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <!-- The user image in the navbar-->
+            <img src="../../images/juiker_logo.png" class="user-image" alt="User Image">
+            <!-- hidden-xs hides the username on small devices so only the image appears. -->
+            <span class="hidden-xs">
+              台灣自來水
+              <span class="caret"></span>
+            </span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="#">切換身份</a></li>
+            <li><a href="#">更改密碼</a></li>
+            <li role="separator" class="divider"></li>
+            <li class="dropdown-item"><button class="btn btn-danger"><i class="fa fa-power-off"></i>  登出</button></li>
+          </ul>
+        </li>
+        <!-- Control Sidebar Toggle Button -->
+        <!-- <li>
+          <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+        </li> -->
+      </ul>
+    </div>
+  </nav>
+</header>
+  
+  <!-- Left side column. contains the logo and sidebar -->
+  <aside id="sidebar" class="main-sidebar">
+
+  <!-- sidebar: style can be found in sidebar.less -->
+  <section class="sidebar">
+
+    <!-- Sidebar Menu -->
+    <ul class="sidebar-menu" data-widget="tree">
+      <li><a href=""><i class="fa fa-building-o"></i> <span>企業基本資料</span></a></li>
+      <li class="header">員工資料管理</li>
+      <!-- Optionally, you can add icons to the links -->
+      <li class="active"><a href="#"><i class="fa fa-folder"></i> <span>員工資料</span></a></li>
+      <li>
+        <a href="#">
+          <i class="fa fa-unlock-alt"></i> <span>共用設定</span>
+          <span class="badge bg-orange">5</span>
+        </a>
+      </li>
+      <li class="header">通訊錄</li>
+      <li><a href="#"><i class="fa fa-address-book"></i> <span>手機通訊錄</span></a></li>
+      <li><a href="#"><i class="fa fa-wrench"></i> <span>手機通訊錄管理</span></a></li>
+      <li class="header">微應用</li>
+      <li><a href="#"><i class="fa fa-comments"></i> <span>企業聊天室</span></a></li>
+      <li><a href="#"><i class="fa fa-bullhorn"></i> <span>企業公告</span></a></li>
+      <li><a href="#"><i class="fa fa-users"></i> <span>企業專屬社團</span></a></li>
+      <li><a href="#"><i class="fa fa-bar-chart"></i> <span>企業報表</span></a></li>
+    </ul>
+    <!-- /.sidebar-menu -->
+  </section>
+  <!-- /.sidebar -->
+</aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div id="content" class="content-wrapper">
+    <!-- Main content -->
+    <section class="content container-fluid">
+
+        <!-- include content -->
+        
+
+
+
+
+<div class="nav-tabs-custom jk-no-bg">
+    <ul class="nav nav-tabs nav-tabs-lg jk-bg-white" role="tablist">
+        <li><a href="#">通訊錄資訊</a></li>
+        <li><a href="#">欄位配對</a></li>
+        <li><a href="#">名單彙整</a></li>
+        <li class="active"><a href="#">成員名單與授權</a></li>
+    </ul>
+    <div class="tab-content no-padding jk-mt">
+        <div role="tabpanel" class="tab-pane active">
+
+            <div class="box no-border">
+                <div class="box-body">
+                    <div class="pull-right">
+                        <span class="jk-text-lg jk-mr">78 名成員</span>
+                        <span class="jk-text-lg jk-mr">180 手機門號</span>
+                        <span class="jk-text-lg"><span class="text-primary">45</span> 已授權</span>
+                    </div>
+                    <h4 class="jk-mt-0">
+                        <i class="text-primary fa fa-folder"></i>
+                        2016年台灣自來水北區技術研發部
+                    </h4>
+                    <div class="box box-primary box-solid no-border no-shadow no-margin">
+                        <div class="box-header">
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <p class="box-title">
+                                        <i class="fa fa-building"></i>
+                                        鎖定部門組織
+                                    </p>
+                                </div>
+                                <div class="col-xs-8">
+                                    <p class="box-title">
+                                        <i class="fa fa-cubes"></i>
+                                        來自[啾啾啾部]的員工 (124 筆)
+                                        <i class="caret"></i>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                            <select class="form-control select2" multiple data-placeholder="請先選擇搜尋條件後，輸入關鍵字搜尋">
+                                <option class="jk-select2-has-child" value="1">單位名稱很長的單位會自動單位名稱很長的單位會自動單位名稱很長的單位會自動單位名稱很長的單位會自動</option>
+                                <option class="jk-select2-l2 jk-select2-has-child" value="2">Wyoming</option>
+                                <option class="jk-select2-l3 jk-select2-has-child" value="3">Alabama</option>
+                                <option class="jk-select2-l4 jk-select2-has-child" value="4">Wyoming</option>
+                                <option class="jk-select2-l5" value="5">Wyoming</option>
+                                <option class="jk-select2-has-child" value="6">Alabama</option>
+                                <option class="jk-select2-l2 jk-select2-has-child" value="7">Wyoming</option>
+                                <option class="jk-select2-l3" value="8">Wyoming</option>
+                                <option value="9">沒有階層的選項</option>
+                            </select>
+                        </div>
+                        
+                        <!-- 測試階層用，可刪 -->
+                        <div class="select2-container--default">
+                        <ul class="select2-results__options">
+                            <li class="jk-select2-has-child select2-results__option">單位名稱很長的單位會自</li>
+                            <li class="jk-select2-l2 jk-select2-has-child select2-results__option">單位名稱很長的單位會自</li>
+                            <li class="jk-select2-l3 jk-select2-has-child select2-results__option select2-results__option--highlighted">單位名稱很長的單位會自</li>
+                            <li class="jk-select2-l4 jk-select2-has-child select2-results__option">單位名稱很長的單位會自</li>
+                            <li class="jk-select2-l5 select2-results__option">單位名稱很長的單位會自</li>
+                            <li class="jk-select2-l3 jk-select2-has-child select2-results__option">單位名稱很長的單位會自</li>
+                            <li class="jk-select2-l4 jk-select2-has-child select2-results__option">單位名稱很長的單位會自</li>
+                            <li class="jk-select2-l5 select2-results__option">單位名稱很長的單位會自</li>
+                        </ul>
+                        </div>
+                        <!-- 測試階層用 // -->
+
+                        <div class="box-body">
+                            <div class="row">
+                                <div class="col-xs-4 ui-resizable" style="min-height:565px; overflow:hidden">
+                                    <div class="nav-tabs-custom no-margin" style="min-width: 1000px">
+                                        <ul class="nav nav-tabs nav-tabs-sm" role="tablist">
+                                            <li class="active"><a href="#">全部</a></li>
+                                            <li><a href="#">鎖定</a></li>
+                                            <li><a href="#">未鎖定</a></li>
+                                        </ul>
+                                        <div class="tab-content">
+                                            <div role="tabpanel" class="tab-pane active">
+                                                <span class="jk-list-item" role="button" data-toggle="collapse" data-target="#collapseMenu">
+                                                    <span class="caret"></span>
+                                                    2016年台灣自來水公司北區技術研發單位
+                                                </span>
+                                                <ul class="collapse in list-unstyled jk-ml" id="collapseMenu">
+                                                    <li>
+                                                        <span class="jk-list-item collapsed" role="button" data-toggle="collapse" data-target="#">
+                                                            <i class="caret"></i>
+                                                            <a href="">
+                                                                <i class="fa fa-lock jk-text-muted jk-text-lg"></i>
+                                                            </a>
+                                                            董事會董事宗親家族系列
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="jk-list-item">
+                                                            <i class="caret jk-invisible"></i>
+                                                            <a href="">
+                                                                <i class="fa fa-lock jk-text-muted jk-text-lg"></i>
+                                                            </a>
+                                                            生活輔導互助委員食物部12345677
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="jk-list-item collapsed" role="button" data-toggle="collapse" data-target="#">
+                                                            <i class="caret"></i>
+                                                            <i class="fa fa-lock jk-text-lg jk-invisible"></i>
+                                                            啾啾啾啾部
+                                                        </span>
+                                                    </li>
+                                                    <li>
+                                                        <span class="jk-list-item collapsed" role="button" data-toggle="collapse" data-target="#">
+                                                            <i class="caret"></i>
+                                                            <a href="">
+                                                                <i class="fa fa-lock jk-text-muted jk-text-lg"></i>
+                                                            </a>
+                                                            網路客戶服務部設計體驗
+                                                        </span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <span class="ui-resizable-handle"><i class="fa fa-arrows-h"></i></span>
+                                </div>
+                                <div class="col-xs-8">
+                                    <div class="jk-mb-sm clearfix">
+                                        <div class="pull-right">
+                                            <ul class="list-inline form-inline">
+                                                <li><a href="">進階篩選</a></li>
+                                                <li>
+                                                    <div class="btn-group">
+                                                        <span class="btn jk-btn-black jk-btn-border btn-sm"><i class="fa fa-eye"></i></span>
+                                                        <button type="button" class="btn btn-default btn-sm">
+                                                            欄位顯示 <span class="caret"></span>
+                                                        </button>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <p class="jk-text-lg">
+                                            <i class="caret"></i>
+                                            <i class="fa fa-users jk-text-muted"></i> 部門員工
+                                        </p>
+                                    </div>
+                                    <table class="table text-sm no-margin">
+                                        <caption class="text-center jk-bg-primary-light">通訊錄門號授權</caption>
+                                        <colgroup>
+                                            <col style="width: 150px;">
+                                            <col>
+                                            <col style="width: 100px;">
+                                            <col style="width: 100px;">
+                                            <col>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th>
+                                                    姓名
+                                                    <button class="btn btn-link jk-text-color no-padding jk-mx-sm"><i class="fa fa-arrow-down"></i></button>
+                                                </th>
+                                                <th>手機號碼</th>
+                                                <th>
+                                                    工號
+                                                    <button class="btn btn-link jk-text-color no-padding jk-mx-sm"><i class="fa fa-arrow-down"></i></button>
+                                                </th>
+                                                <th class="text-center">大頭貼</th>
+                                                <th>
+                                                    <button class="btn btn-link jk-text-color no-padding jk-mx-sm pull-right"><i class="fa fa-ellipsis-v"></i></button>
+                                                    手機號碼2
+                                                </th>
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td>Billy Little</td>
+                                                <td>
+                                                    <i class="fa fa-mobile-phone jk-icon-circle bg-primary"></i>
+                                                    0-(088)377-1179
+                                                </td>
+                                                <td>ZT506</td>
+                                                <td class="text-center"><img src="http://placehold.it/50x50" alt="" class="jk-user-image"></td>
+                                                <td>
+                                                    <i class="fa fa-unlink jk-icon-circle jk-bg-muted"></i>
+                                                    0-(088)377-1179
+                                                </td>
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td>Billy Little</td>
+                                                <td>
+                                                    <i class="fa fa-mobile-phone jk-icon-circle bg-primary"></i>
+                                                    0-(088)377-1179
+                                                </td>
+                                                <td>ZT506</td>
+                                                <td class="text-center"><img src="http://placehold.it/50x50" alt="" class="jk-user-image"></td>
+                                                <td>
+                                                    <i class="fa fa-unlink jk-icon-circle jk-bg-muted"></i>
+                                                    0-(088)377-1179
+                                                </td>
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td>Billy Little</td>
+                                                <td>
+                                                    <i class="fa fa-mobile-phone jk-icon-circle bg-primary"></i>
+                                                    0-(088)377-1179
+                                                </td>
+                                                <td>ZT506</td>
+                                                <td class="text-center"><img src="http://placehold.it/50x50" alt="" class="jk-user-image"></td>
+                                                <td>
+                                                    <i class="fa fa-unlink jk-icon-circle jk-bg-muted"></i>
+                                                    0-(088)377-1179
+                                                </td>
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td>Billy Little</td>
+                                                <td>
+                                                    <i class="fa fa-mobile-phone jk-icon-circle bg-primary"></i>
+                                                    0-(088)377-1179
+                                                </td>
+                                                <td>ZT506</td>
+                                                <td class="text-center"><img src="http://placehold.it/50x50" alt="" class="jk-user-image"></td>
+                                                <td>
+                                                    <i class="fa fa-unlink jk-icon-circle jk-bg-muted"></i>
+                                                    0-(088)377-1179
+                                                </td>
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td>Billy Little</td>
+                                                <td>
+                                                    <i class="fa fa-mobile-phone jk-icon-circle bg-primary"></i>
+                                                    0-(088)377-1179
+                                                </td>
+                                                <td>ZT506</td>
+                                                <td class="text-center"><img src="http://placehold.it/50x50" alt="" class="jk-user-image"></td>
+                                                <td>
+                                                    <i class="fa fa-unlink jk-icon-circle jk-bg-muted"></i>
+                                                    0-(088)377-1179
+                                                </td>
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td>Billy Little</td>
+                                                <td>
+                                                    <i class="fa fa-mobile-phone jk-icon-circle bg-primary"></i>
+                                                    0-(088)377-1179
+                                                </td>
+                                                <td>ZT506</td>
+                                                <td class="text-center"><img src="http://placehold.it/50x50" alt="" class="jk-user-image"></td>
+                                                <td>
+                                                    <i class="fa fa-unlink jk-icon-circle jk-bg-muted"></i>
+                                                    0-(088)377-1179
+                                                </td>
+                                            </tr>
+                                            
+                                            
+                                            <tr>
+                                                <td>Billy Little</td>
+                                                <td>
+                                                    <i class="fa fa-mobile-phone jk-icon-circle bg-primary"></i>
+                                                    0-(088)377-1179
+                                                </td>
+                                                <td>ZT506</td>
+                                                <td class="text-center"><img src="http://placehold.it/50x50" alt="" class="jk-user-image"></td>
+                                                <td>
+                                                    <i class="fa fa-mobile-phone jk-icon-circle bg-primary"></i>
+                                                    0-(088)377-1179
+                                                </td>
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td>Billy Little</td>
+                                                <td>
+                                                    <i class="fa fa-mobile-phone jk-icon-circle bg-primary"></i>
+                                                    0-(088)377-1179
+                                                </td>
+                                                <td>ZT506</td>
+                                                <td class="text-center"><img src="http://placehold.it/50x50" alt="" class="jk-user-image"></td>
+                                                <td>
+                                                    <i class="fa fa-mobile-phone jk-icon-circle bg-primary"></i>
+                                                    0-(088)377-1179
+                                                </td>
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td>Billy Little</td>
+                                                <td>
+                                                    <i class="fa fa-mobile-phone jk-icon-circle bg-primary"></i>
+                                                    0-(088)377-1179
+                                                </td>
+                                                <td>ZT506</td>
+                                                <td class="text-center"><img src="http://placehold.it/50x50" alt="" class="jk-user-image"></td>
+                                                <td>
+                                                    <i class="fa fa-mobile-phone jk-icon-circle bg-primary"></i>
+                                                    0-(088)377-1179
+                                                </td>
+                                            </tr>
+                                            
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-footer">
+                    <button class="btn jk-btn-muted jk-btn-border col-xs-offset-3">重置</button>
+                    <button class="btn btn-primary jk-btn-border">確認</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  <!-- Main Footer -->
+  <footer id="footer" class="main-footer">
+  <!-- To the right -->
+  <div class="pull-right hidden-xs">
+  <ul class="list-inline">
+      <li>
+        <a href="site/index">關於Juiker</a>
+      </li>
+      <li>
+        <a href="#">常見問題</a>
+      </li>
+      <li>
+        <a href="#">聯絡我們</a>
+      </li>
+      <li>
+        <a href="#">服務條款</a>
+      </li>
+    </ul>
+  </div>
+  <!-- Default to the left -->
+  <span class="text-gray">版權所有 &copy; 工業技術研究院 2017 GNU Public License</span>
+</footer>
+
+  
+
+</div>
+<!-- ./wrapper -->
+
+<!-- Control Sidebar -->
+<aside class="control-sidebar">
+  
+</aside>
+<!-- /.control-sidebar -->
+
+
+<!-- foot -->
+<!-- jQuery 3 -->
+<script src="../../vendor/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap 3.3.7 -->
+<script src="../../js/bootstrap.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../../js/adminlte.min.js"></script>
+<script>
+  // override - sidebar collapse breakpoint
+  $('.sidebar-toggle[data-toggle="push-menu"]').pushMenu({
+    collapseScreenSize: 999,
+  });
+
+  // toggle body class when navbar-collapse is toggled
+  $('#navbar-collapse').on('show.bs.collapse', function () {
+    $('body').addClass('navbar-open');
+    // click outside to close
+    $('#content').click(function() {
+      $('#navbar-collapse').collapse('hide');
+    });
+  });
+  $('#navbar-collapse').on('hide.bs.collapse', function () {
+    $('body').removeClass('navbar-open');
+  });
+
+  // toggle body class when control-sidebar is toggled
+  $('[data-toggle="control-sidebar"]').on('expanded.controlsidebar', function () {
+    $('body').addClass('control-sidebar-expend');
+    
+  });
+  $('[data-toggle="control-sidebar"]').on('collapsed.controlsidebar', function () {
+    $('body').removeClass('control-sidebar-expend');
+  });
+</script>
+
+      <script src="../../vendor/select2/js/select2.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".select2").select2();
+        });
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,531 @@
+
+
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html lang="zh-TW">
+<head>
+  <!-- head -->
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>19-04 - Juiker 揪科</title>
+<meta content="width=device-width, initial-scale=1, user-scalable=yes" name="viewport">
+<link rel="icon" type="image/vnd.microsoft.icon" href="../../brand/juiker/img/favicon.ico" />
+
+<!-- core Bootstrap -->
+<link rel="stylesheet" href="../../css/bootstrap.min.css">
+
+<!-- vendor css -->
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="../../fonts/font-awesome/css/font-awesome.min.css">
+<!-- Ionicons -->
+<link rel="stylesheet" href="../../fonts/Ionicons/css/ionicons.min.css">
+
+<!-- Theme style -->
+<link rel="stylesheet" href="../../css/AdminLTE.min.css">
+<!-- <link rel="stylesheet" href="../../vendor/AdminLTE/css/skins/skin-blue.min.css"> -->
+
+<!-- Custom style -->
+<link rel="stylesheet" href="../../css/site.css">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<!-- Google Font -->
+<link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+<link rel="stylesheet"
+    href="http://fonts.googleapis.com/earlyaccess/notosanstc.css">
+</head>
+<!--
+BODY TAG OPTIONS:
+=================
+Apply one or more of the following classes to get the
+desired effect
+|---------------------------------------------------------|
+| SKINS         | skin-blue                               |
+|               | skin-black                              |
+|               | skin-purple                             |
+|               | skin-yellow                             |
+|               | skin-red                                |
+|               | skin-green                              |
+|---------------------------------------------------------|
+|LAYOUT OPTIONS | fixed                                   |
+|               | layout-boxed                            |
+|               | layout-top-nav                          |
+|               | sidebar-collapse                        |
+|               | sidebar-mini                            |
+|---------------------------------------------------------|
+-->
+<body class="hold-transition ">
+<div class="wrapper">
+
+  <!-- Main Header -->
+  <header id="header" class="main-header">
+  <!-- Sidebar toggle button-->
+  <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+    <span class="sr-only">Toggle navigation</span>
+  </a>
+  <!-- Logo -->
+  <a href="index2.html" class="logo visible-lg-block">
+    <!-- mini logo for sidebar mini 50x50 pixels -->
+    <!-- <span class="logo-mini"><b>A</b>LT</span> -->
+    <!-- logo for regular state and mobile devices -->
+    <span class="logo-lg">Juiker</span>
+  </a>
+
+  <!-- Header Navbar -->
+  <nav class="navbar navbar-static-top" role="navigation">
+    <ol class="breadcrumb">
+      
+          <li class="active"><i class="fa fa-user-circle text-yellow"></i> 員工資料</li>
+      
+    </ol>
+    <!-- Navbar Right Menu -->
+    <div class="navbar-custom-menu">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+        <i class="fa fa-ellipsis-h"></i>
+      </button>
+      <ul class="navbar-collapse collapse list-unstyled" id="navbar-collapse">
+        <li>
+          <a class="jk-list-item collapsed" role="button" data-toggle="collapse" href="#collapseExample">
+            <i class="fa fa-globe"></i>
+            選擇語言
+            <i class="caret"></i>
+          </a>
+          <ul class="collapse list-unstyled" id="collapseExample">
+            <li><a class="jk-list-item" href="#">繁體中文</a></li>
+            <li><a class="jk-list-item" href="#">English</a></li>
+          </ul>
+        </li>
+        <li><a class="jk-list-item" href="#">企業基本資料</a></li>
+        <li><a class="jk-list-item" href="#">切換身份</a></li>
+        <li><a class="jk-list-item" href="#">更改密碼</a></li>
+        <li><a class="jk-list-item" href="#">系統管理設定</a></li>
+        <li>
+          <a href="#" class="jk-list-item">
+            <i class="fa fa-power-off"></i>
+            登出
+          </a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav hidden-xs">
+        <!-- Messages: style can be found in dropdown.less-->
+        <li class="dropdown">
+          <!-- Menu toggle button -->
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <i class="fa fa-envelope-o"></i>
+            <span class="label label-warning">4</span>
+          </a>
+          <ul class="dropdown-menu">
+            <!-- <li class="header">You have 4 messages</li> -->
+            <li><a href="#">測試訊息</a></li>
+            <li><a href="#">測試訊息</a></li>
+            <!-- <li class="footer"><a href="#">See All Messages</a></li> -->
+          </ul>
+        </li>
+        <!-- /.messages-menu -->
+
+        <!-- Tasks Menu -->
+        <li class="dropdown">
+          <!-- Menu Toggle Button -->
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <i class="fa fa-globe"></i>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="#">繁體中文</a></li>
+            <li><a href="#">English English English English English English English English English English English English English English English English</a></li>
+          </ul>
+        </li>
+        <!-- User Account Menu -->
+        <li class="dropdown user user-menu">
+          <!-- Menu Toggle Button -->
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+            <!-- The user image in the navbar-->
+            <img src="../../images/juiker_logo.png" class="user-image" alt="User Image">
+            <!-- hidden-xs hides the username on small devices so only the image appears. -->
+            <span class="hidden-xs">
+              台灣自來水
+              <span class="caret"></span>
+            </span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="#">切換身份</a></li>
+            <li><a href="#">更改密碼</a></li>
+            <li role="separator" class="divider"></li>
+            <li class="dropdown-item"><button class="btn btn-danger"><i class="fa fa-power-off"></i>  登出</button></li>
+          </ul>
+        </li>
+        <!-- Control Sidebar Toggle Button -->
+        <!-- <li>
+          <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+        </li> -->
+      </ul>
+    </div>
+  </nav>
+</header>
+  
+  <!-- Left side column. contains the logo and sidebar -->
+  <aside id="sidebar" class="main-sidebar">
+
+  <!-- sidebar: style can be found in sidebar.less -->
+  <section class="sidebar">
+
+    <!-- Sidebar Menu -->
+    <ul class="sidebar-menu" data-widget="tree">
+      <li><a href=""><i class="fa fa-building-o"></i> <span>企業基本資料</span></a></li>
+      <li class="header">員工資料管理</li>
+      <!-- Optionally, you can add icons to the links -->
+      <li class="active"><a href="#"><i class="fa fa-folder"></i> <span>員工資料</span></a></li>
+      <li>
+        <a href="#">
+          <i class="fa fa-unlock-alt"></i> <span>共用設定</span>
+          <span class="badge bg-orange">5</span>
+        </a>
+      </li>
+      <li class="header">通訊錄</li>
+      <li><a href="#"><i class="fa fa-address-book"></i> <span>手機通訊錄</span></a></li>
+      <li><a href="#"><i class="fa fa-wrench"></i> <span>手機通訊錄管理</span></a></li>
+      <li class="header">微應用</li>
+      <li><a href="#"><i class="fa fa-comments"></i> <span>企業聊天室</span></a></li>
+      <li><a href="#"><i class="fa fa-bullhorn"></i> <span>企業公告</span></a></li>
+      <li><a href="#"><i class="fa fa-users"></i> <span>企業專屬社團</span></a></li>
+      <li><a href="#"><i class="fa fa-bar-chart"></i> <span>企業報表</span></a></li>
+    </ul>
+    <!-- /.sidebar-menu -->
+  </section>
+  <!-- /.sidebar -->
+</aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div id="content" class="content-wrapper">
+    <!-- Main content -->
+    <section class="content container-fluid">
+
+        <!-- include content -->
+        
+
+<div class="nav-tabs-custom jk-no-bg">
+    <ul class="nav nav-tabs nav-tabs-lg jk-bg-white" role="tablist">
+        <li><a href="#">Employee Member</a></li>
+        <li class="active"><a href="#">Filed Setting</a></li>
+        <li><a href="#">Upload Employee Data</a></li>
+    </ul>
+
+    <div class="tab-content no-padding jk-mt">
+
+        <div role="tabpanel" class="tab-pane active">
+
+            <div class="box jk-box-lg no-border">
+                <div class="box-body">
+                    <div class="jk-mb clearfix">
+                        <div class="pull-right jk-w50 jk-p-icon">
+                            <i class="fa fa-lightbulb-o text-warning"></i>
+                            長按滑鼠，即可拖拉欄位來調整順序 (如果因為翻譯很長的話這邊會跑到第二行也沒有問題的喔顯示效果一下）
+                        </div>
+                        <h4>
+                            <i class="text-primary fa fa-folder"></i>
+                            Department of Consumer Protection
+                        </h4>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <div class="jk-num-box ui-sortable">
+                                <span class="num">1</span>
+                                <!-- 可以拖的：class + draggable -->
+                                <div class="box no-border draggable">
+                                    <div class="box-header">
+                                        Name
+                                        <i class="fa fa-ellipsis-v pull-right"></i>
+                                    </div>
+                                    <div class="box-body">
+                                        <div class="row">
+                                            <div class="col-xs-6">
+                                                <div class="radio no-margin">
+                                                    <label>
+                                                        <input type="radio" name="optionsRadios1" value="option1" checked disabled> Must
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="jk-num-box ui-sortable">
+                                <span class="num">2</span>
+                                <!-- 可以拖的：class + draggable -->
+                                <div class="box no-border draggable">
+                                    <div class="box-header">
+                                        Cell Phone
+                                        <i class="fa fa-ellipsis-v pull-right"></i>
+                                    </div>
+                                    <div class="box-body">
+                                        <div class="row">
+                                            <div class="col-xs-6">
+                                                <div class="radio no-margin">
+                                                    <label>
+                                                        <input type="radio" name="optionsRadios2" value="option1"> Must
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-6">
+                                                <div class="radio no-margin">
+                                                    <label>
+                                                        <input type="radio" name="optionsRadios2" value="option2" checked> Optional
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="jk-num-box ui-sortable">
+                                <span class="num">2</span>
+                                <!-- 可以拖的：class + draggable -->
+                                <div class="box no-border draggable">
+                                    <div class="box-header">
+                                        Cell Phone
+                                        <i class="fa fa-ellipsis-v pull-right"></i>
+                                    </div>
+                                    <div class="box-body">
+                                        <div class="row">
+                                            <div class="col-xs-6">
+                                                <div class="radio no-margin">
+                                                    <label>
+                                                        <input type="radio" name="optionsRadios2" value="option1"> Must
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-6">
+                                                <div class="radio no-margin">
+                                                    <label>
+                                                        <input type="radio" name="optionsRadios2" value="option2" checked> Optional
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="jk-num-box ui-sortable">
+                                <span class="num">2</span>
+                                <!-- 可以拖的：class + draggable -->
+                                <div class="box no-border draggable">
+                                    <div class="box-header">
+                                        Cell Phone
+                                        <i class="fa fa-ellipsis-v pull-right"></i>
+                                    </div>
+                                    <div class="box-body">
+                                        <div class="row">
+                                            <div class="col-xs-6">
+                                                <div class="radio no-margin">
+                                                    <label>
+                                                        <input type="radio" name="optionsRadios2" value="option1"> Must
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-6">
+                                                <div class="radio no-margin">
+                                                    <label>
+                                                        <input type="radio" name="optionsRadios2" value="option2" checked> Optional
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="jk-num-box ui-sortable">
+                                <span class="num">2</span>
+                                <!-- 可以拖的：class + draggable -->
+                                <div class="box no-border draggable">
+                                    <div class="box-header">
+                                        Cell Phone
+                                        <i class="fa fa-ellipsis-v pull-right"></i>
+                                    </div>
+                                    <div class="box-body">
+                                        <div class="row">
+                                            <div class="col-xs-6">
+                                                <div class="radio no-margin">
+                                                    <label>
+                                                        <input type="radio" name="optionsRadios2" value="option1"> Must
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-6">
+                                                <div class="radio no-margin">
+                                                    <label>
+                                                        <input type="radio" name="optionsRadios2" value="option2" checked> Optional
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="col-xs-6">
+                            
+                            <div class="jk-num-box ui-sortable">
+                                <span class="num">6</span>
+                                <!-- 可以拖的：class + draggable -->
+                                <div class="box no-border draggable">
+                                    <div class="box-header">
+                                        Telephone
+                                        <i class="fa fa-ellipsis-v pull-right"></i>
+                                    </div>
+                                    <div class="box-body">
+                                        <div class="row">
+                                            <div class="col-xs-6">
+                                                <div class="radio no-margin">
+                                                    <label>
+                                                        <input type="radio" name="optionsRadios6" value="option1"> Must
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-6">
+                                                <div class="radio no-margin">
+                                                    <label>
+                                                        <input type="radio" name="optionsRadios6" value="option2" checked> Optional
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="jk-num-box ui-sortable">
+                                <span class="num">6</span>
+                                <!-- 可以拖的：class + draggable -->
+                                <div class="box no-border draggable">
+                                    <div class="box-header">
+                                        Telephone
+                                        <i class="fa fa-ellipsis-v pull-right"></i>
+                                    </div>
+                                    <div class="box-body">
+                                        <div class="row">
+                                            <div class="col-xs-6">
+                                                <div class="radio no-margin">
+                                                    <label>
+                                                        <input type="radio" name="optionsRadios6" value="option1"> Must
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-6">
+                                                <div class="radio no-margin">
+                                                    <label>
+                                                        <input type="radio" name="optionsRadios6" value="option2" checked> Optional
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="box-footer text-center">
+                    <button type="button" class="btn jk-btn-muted jk-btn-border" data-toggle="modal" data-target="#myModal2">取消</button>
+                    <button type="button" class="btn btn-primary jk-btn-border">確定</button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  <!-- Main Footer -->
+  <footer id="footer" class="main-footer">
+  <!-- To the right -->
+  <div class="pull-right hidden-xs">
+  <ul class="list-inline">
+      <li>
+        <a href="site/index">關於Juiker</a>
+      </li>
+      <li>
+        <a href="#">常見問題</a>
+      </li>
+      <li>
+        <a href="#">聯絡我們</a>
+      </li>
+      <li>
+        <a href="#">服務條款</a>
+      </li>
+    </ul>
+  </div>
+  <!-- Default to the left -->
+  <span class="text-gray">版權所有 &copy; 工業技術研究院 2017 GNU Public License</span>
+</footer>
+
+  
+
+</div>
+<!-- ./wrapper -->
+
+<!-- Control Sidebar -->
+<aside class="control-sidebar">
+  
+</aside>
+<!-- /.control-sidebar -->
+
+
+<!-- foot -->
+<!-- jQuery 3 -->
+<script src="../../vendor/jquery/dist/jquery.min.js"></script>
+<!-- Bootstrap 3.3.7 -->
+<script src="../../js/bootstrap.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../../js/adminlte.min.js"></script>
+<script>
+  // override - sidebar collapse breakpoint
+  $('.sidebar-toggle[data-toggle="push-menu"]').pushMenu({
+    collapseScreenSize: 999,
+  });
+
+  // toggle body class when navbar-collapse is toggled
+  $('#navbar-collapse').on('show.bs.collapse', function () {
+    $('body').addClass('navbar-open');
+    // click outside to close
+    $('#content').click(function() {
+      $('#navbar-collapse').collapse('hide');
+    });
+  });
+  $('#navbar-collapse').on('hide.bs.collapse', function () {
+    $('body').removeClass('navbar-open');
+  });
+
+  // toggle body class when control-sidebar is toggled
+  $('[data-toggle="control-sidebar"]').on('expanded.controlsidebar', function () {
+    $('body').addClass('control-sidebar-expend');
+    
+  });
+  $('[data-toggle="control-sidebar"]').on('collapsed.controlsidebar', function () {
+    $('body').removeClass('control-sidebar-expend');
+  });
+</script>
+
+
+</body>
+</html>

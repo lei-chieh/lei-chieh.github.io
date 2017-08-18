@@ -10,7 +10,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <!-- head -->
   <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>09-01 - Juiker 揪科</title>
+<title>26-02 - Juiker 揪科</title>
 <meta content="width=device-width, initial-scale=1, user-scalable=yes" name="viewport">
 <link rel="icon" type="image/vnd.microsoft.icon" href="../../brand/juiker/img/favicon.ico" />
 
@@ -213,47 +213,50 @@ desired effect
         
 
 
-
-
-<div class="row jk-steps-bar">
-    <div class="col-xs-4 step done">
-        <span class="num"><i class="fa fa-check"></i></span>
-        <span class="title">建立資料夾</span>
-        <span class="caret"></span>
-    </div>
-    <div class="col-xs-4 step done">
-        <span class="num"><i class="fa fa-check"></i></span>
-        <span class="title">欄位設定</span>
-        <span class="caret"></span>
-    </div>
-    <div class="col-xs-4 step active">
-        <span class="num">3</span>
-        <span class="title">上傳</span>
-        <span class="caret"></span>
-    </div>
+<div class="jk-mb clearfix">
+    <div class="pull-right"><small class="text-muted">管理員：Dylan Garcia</small></div>
+    <h4 class="jk-mt-0">
+        <i class="text-primary fa fa-folder"></i>
+        Consumer Protection Committee
+    </h4>
 </div>
 
-<div class="box jk-box-lg no-border">
+<div class="box no-border">
     <div class="box-body">
-        <h4>
-            <i class="text-primary fa fa-folder"></i>
-            2016年台灣自來水公司北區技術研發A專案
-        </h4>
-        <p>您的欄位格式已建立完成，請下載範例格式，依據格式建立員工資料，完成後即可進行上傳。</p>
-        <div class="row text-center jk-my-xl">
-            <div class="col-xs-6">
-                <button type="button" class="btn btn-app btn-lg btn-primary btn-block margin-bottom jk-mx-a" data-toggle="modal" data-target="#myModal">
-                    <i class="fa fa-download"></i>
-                    下載範例格式
-                </button>
-                <p>建議您以範例格式建立您的員工資料</p>
-            </div>
-            <div class="col-xs-6">
-                <button type="button" class="btn btn-app btn-lg btn-primary btn-block margin-bottom jk-mx-a" data-toggle="modal" data-target="#myModal2">
-                    <i class="fa fa-upload"></i>
-                    上傳
-                </button>
-                <p>立即上傳您的員工資料</p>
+        <table class="table no-margin">
+            <colgroup>
+                <col style="width: 180px;">
+                <col style="width: 230px;">
+                <col style="width: 120px;">
+                <col style="width: 120px;">
+                <col style="width: 150px;">
+            </colgroup>
+            <tbody>
+                <tr>
+                    <th>通訊錄名稱</th>
+                    <th>申請人</th>
+                    <th>申請日期 <i class="caret"></i></th>
+                    <th>處理日期 <i class="caret"></i></th>
+                    <th>員工資料提供模式</th>
+                </tr>
+                <tr class="jk-no-data">
+                    <td colspan="5" class="text-center">
+                        <i class="fa fa-address-book"></i>
+                        尚未有通訊錄管理員索取共用
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="box-footer">
+        <div class="pull-left">
+            <span class="btn btn-primary jk-icon-btn">
+                <i class="fa fa-cogs"></i>
+            </span>
+            <span id="hint" class="jk-popover-align-left" data-toggle="popover" data-placement="top">預設顯示設定</span>
+            <div id="hint_content_wrapper" style="display: none">
+                <p>點擊這裡可以先設定顯示設定，之後有通訊錄要共用即可快速套用！</p>
+                <p class="text-right"><a class="text-info" href="">我知道了</a></p>
             </div>
         </div>
     </div>
@@ -298,59 +301,6 @@ desired effect
 </aside>
 <!-- /.control-sidebar -->
 
-  <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header bg-primary">
-                <button type="button" class="close pull-left jk-text-white" data-dismiss="modal">
-                    <i class="ion-android-arrow-back"></i>
-                </button>
-                <p class="modal-title">
-                    下載範例
-                </p>
-            </div>
-            <div class="modal-body">
-                <p>您設定的欄位順序將對應員工表單的欄位順序，將作為您員工通訊錄表單的欄位範本，如下圖範例。</p>
-                <p class="text-center"><img src="http://placehold.it/467x124" /></p>
-                <p>請依照各欄位的參考格式進行填寫</p>
-                <p>
-                    <div class="checkbox text-muted">
-                        <label>
-                            <input type="checkbox"> 下次不要再提醒
-                        </label>
-                    </div>
-                </p>
-            </div>
-            <div class="modal-footer text-center">
-                <button type="button" class="btn jk-btn-muted jk-btn-border" data-dismiss="modal">取消</button>
-                <button type="button" class="btn btn-primary jk-btn-border">下載</button>
-            </div>
-        </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
-<div class="modal fade" id="myModal2" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header bg-primary">
-                <button type="button" class="close pull-left jk-text-white" data-dismiss="modal">
-                    <i class="ion-android-arrow-back"></i>
-                </button>
-                <p class="modal-title">
-                    上傳員工資料
-                </p>
-            </div>
-            <div class="modal-body">
-                <p>檔案名稱： 目前無選取檔案</p>
-                <p></p>
-            </div>
-            <div class="modal-footer text-center">
-                <button type="button" class="btn jk-btn-muted jk-btn-border" data-dismiss="modal">取消</button>
-                <button type="button" class="btn btn-primary jk-btn-border">選擇</button>
-            </div>
-        </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
-
 
 <!-- foot -->
 <!-- jQuery 3 -->
@@ -385,6 +335,15 @@ desired effect
   $('[data-toggle="control-sidebar"]').on('collapsed.controlsidebar', function () {
     $('body').removeClass('control-sidebar-expend');
   });
+</script>
+
+  <script>
+    $("#hint").popover({
+        html: true,
+        content: function() {
+            return $('#hint_content_wrapper').html();
+        }
+    }).popover('show');
 </script>
 
 
