@@ -28,13 +28,19 @@
 			border: 4px solid;
 			border-radius: 5px;
 		}
+		button:focus {outline: none;}
+		button.all.mixitup-control-active {color: #fff; background: #000;}
 		button.p1 {border-color: #91e6c7;}
+		button.p1:hover,
 		button.p1.mixitup-control-active {background: #91e6c7;}
 		button.p2 {border-color: #5ecdde;}
+		button.p2:hover,
 		button.p2.mixitup-control-active {background: #5ecdde;}
 		button.js {border-color: #d595aa;}
+		button.js:hover,
 		button.js.mixitup-control-active {background: #d595aa;}
 		button.nojs {border-color: #e0d185;}
+		button.nojs:hover,
 		button.nojs.mixitup-control-active {background: #e0d185;}
 		li {
 			position: relative;
@@ -81,7 +87,7 @@
 <body>
 	<div class="filter">
 		Filter:
-		<button type="button" data-filter="all">All</button>
+		<button class="all" type="button" data-filter="all">All</button>
 		<button class="p1" type="button" data-filter="li.p1">第一階段</button>
 		<button class="p2" type="button" data-filter="li.p2">第二階段</button>
 		<button class="js" type="button" data-filter="li.js">JS盤點表</button>
