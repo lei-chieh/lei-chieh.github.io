@@ -645,15 +645,19 @@ desired effect
   });
 
   // toggle body class when navbar-collapse is toggled
-  $('#navbar-collapse').on('show.bs.collapse', function () {
-    $('body').addClass('navbar-open');
-    // click outside to close
-    $('#content').click(function() {
-      $('#navbar-collapse').collapse('hide');
-    });
+  $('#navbar-collapse').on('show.bs.collapse', function (e) {
+    if ($(this).is(e.target)) {
+      $('body').addClass('navbar-open');
+      // click outside to close
+      $('#content').click(function() {
+        $('#navbar-collapse').collapse('hide');
+      });
+    }
   });
-  $('#navbar-collapse').on('hide.bs.collapse', function () {
-    $('body').removeClass('navbar-open');
+  $('#navbar-collapse').on('hide.bs.collapse', function (e) {
+    if ($(this).is(e.target)) {
+      $('body').removeClass('navbar-open');
+    }
   });
 
   // toggle body class when control-sidebar is toggled
